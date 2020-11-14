@@ -1,0 +1,36 @@
+.btn {position: absolute;
+      z-index: 2;
+      margin-left: 600px;
+      top: 400px;
+      width: 150px;
+      height: 70px;
+      color: black;}
+
+.btn:hover{transform: scale(1.01);
+        }
+
+h1 {font-size: 38px;}
+
+
+/*NAVBAR */
+a {color: black;
+font-size: 24px;}
+
+.titre {font-size: 24px;
+      text-align: center;
+      margin-top: 20px;}
+
+
+.nav-link {font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: white;}
+
+
+/*FRANCE */
+.col-3 {background-color: khaki;
+            text-align: center;}
+
+.btn btn-primary {color: lawngreen;}
+
+/*ANGLETERRE */
+
+

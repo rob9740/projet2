@@ -1,0 +1,61 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}FranceController!{% endblock %}
+
+{% block body %}
+
+<nav class="navbar navbar-expand-sm navbar-dark bg-warning">
+       <a href="home" class="navbar-brand">MAISON DE L'AMBRÉE</a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarMenu">
+        
+        <ul class="navbar-nav ml-auto">
+        <li class="nav-item"><a href="accueil" class="nav-link">ACCUEIL</a></li>
+        <li class="nav-item"><a href="france" class="nav-link">FRANCE</a></li>
+        <li class="nav-item"><a href="angleterre" class="nav-link">ANGLETERRE</a></li>
+        <li class="nav-item"><a href="allemagne" class="nav-link">ALLEMAGNE</a></li>
+        </ul>
+        </div><!-- FIN NAVBAR-COLLAPSE -->
+     </nav><!-- FIN NAVBAR -->
+
+  <div class="pays">
+    <h1 class="text-center mt-4">FRANCE</h1>
+  </div>
+
+  <!-- MAIN -->
+
+  <div class="container">
+  <div class="row">
+  <div class="col-3 mr-5">
+    <img src={{ asset('img/kwak.png') }} />
+      <p>prix</p>
+      <p>volume</p>
+      <p>degre</p>
+  </div><!-- FIN COL-4 -->
+  <div class="col-3 mr-5">
+    <img src={{ asset('img/kwak.png') }} />
+      <p>prix</p>
+      <p>volume</p>
+      <p>degre</p>
+  </div><!-- FIN COL-4 -->
+  <div class="col-3">
+    <img src={{ asset('img/kwak.png') }} />
+      <p>prix</p>
+      <p>volume</p>
+      <p>degre</p>
+      <button class="btn btn-outline-primary">Primary</button>
+  </div><!-- FIN COL-4 -->
+  <button class="btn btn-outline-primary">Primary</button>
+  </div><!-- FIN ROW -->
+  </div><!-- FIN CONTAINER -->
+
+
+
+
+
+
+
+
+{% endblock %}
