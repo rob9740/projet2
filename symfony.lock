@@ -91,7 +91,7 @@
         "version": "2.1.1"
     },
     "php": {
-        "version": "7.1"
+        "version": "7.3"
     },
     "phpdocumentor/reflection-common": {
         "version": "2.1.0"
@@ -393,6 +393,15 @@
     "symfony/security-http": {
         "version": "v4.4.16"
     },
+    "symfony/sendgrid-mailer": {
+        "version": "4.4",
+        "recipe": {
+            "repo": "github.com/symfony/recipes",
+            "branch": "master",
+            "version": "4.4",
+            "ref": "b46e4f8f1adb2864f0aa9c0ff57aea3324a07199"
+        }
+    },
     "symfony/serializer": {
         "version": "v4.4.16"
     },
@@ -491,6 +500,9 @@
     },
     "symfony/yaml": {
         "version": "v4.4.16"
+    },
+    "symfonycasts/verify-email-bundle": {
+        "version": "v1.0.0"
     },
     "twig/extra-bundle": {
         "version": "v3.1.1"
