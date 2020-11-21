@@ -25,6 +25,9 @@ font-size: 24px;}
             color: white;}
 
 
+h2, h5 {color: blue;}
+
+.card-subtitle {color: green;}
 /*FRANCE */
 .col-3 {background-color: khaki;
             text-align: center;}
