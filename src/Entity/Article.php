@@ -37,6 +37,16 @@ class Article
      */
     private $imageFilename;
 
+    /**
+     * @ORM\Column(type="integer")
+     */
+    private $volume;
+
+    /**
+     * @ORM\Column(type="decimal", precision=10, scale=2)
+     */
+    private $degre;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -86,6 +96,30 @@ class Article
     public function setImageFilename(string $imageFilename): self
     {
         $this->imageFilename = $imageFilename;
+
+        return $this;
+    }
+
+    public function getVolume(): ?int
+    {
+        return $this->volume;
+    }
+
+    public function setVolume(int $volume): self
+    {
+        $this->volume = $volume;
+
+        return $this;
+    }
+
+    public function getDegre(): ?string
+    {
+        return $this->degre;
+    }
+
+    public function setDegre(string $degre): self
+    {
+        $this->degre = $degre;
 
         return $this;
     }
