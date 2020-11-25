@@ -25,12 +25,15 @@ font-size: 24px;}
             color: white;}
 
 
-h2, h5 {color: blue;}
 
 
 
-.card {background-color: indianred;}
 
+
+
+
+.card-body {width: 80%;
+      }
 
 .card-subtitle {color: green;}
 /*FRANCE */
