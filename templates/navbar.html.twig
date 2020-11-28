@@ -19,9 +19,39 @@
       <li class="nav-item">
         <a class="nav-link" href="angleterre">Angleterre</a>
       </li>
+      
       <li class="nav-item">
         <a class="nav-link" href="allemagne">Allemagne</a>
       </li>
+       <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          mon Compte
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        {% if not app.user %}
+          <a class="dropdown-item" href="{{ path('app_login') }}">Se connecter</a>
+          <a class="dropdown-item" href="{{ path('app_register') }}">S'enregistrer</a>
+          {% endif %}
+          <div class="dropdown-divider"></div>
+          {% if app.user %}
+          <a class="dropdown-item" href="{{ path('app_logout') }}">déconnecter</a>
+          {% endif %}
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+         Admin
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        {% if not app.user %}
+          <a class="dropdown-item" href="#">Se connecter</a>
+          <a class="dropdown-item" href="#">S'enregistrer</a>
+          {% endif %}
+          <div class="dropdown-divider"></div>
+          {% if app.user %}
+          <a class="dropdown-item" href="#">déconnecter</a>
+          {% endif %}
+        </div>
     </ul>
     <form class="form-inline my-2 my-lg-0">
       <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
