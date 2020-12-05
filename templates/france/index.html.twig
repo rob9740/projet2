@@ -1,7 +1,6 @@
 {% extends 'base.html.twig' %}
 
-
-{% block title %}FranceController!{% endblock %}
+{% block title %}hello FranceController!{% endblock %}
 
 {% block body %}
 
@@ -12,25 +11,21 @@
 </div>
 
 <div class="container">
-  <div class="card" style="width: 18rem;">
-    <img class="card-img-top" src="img/sans-culottz325.png" alt="Card image cap">
-      <div class="card-body">
-        <h5 class="card-title text-center">Sans Culotte</h5>
-        <p class="card-text">Jaune et dorée avec une mousse blanche et généreuse.</p>
-  </div>
-    <ul class="list-group list-group-flush">
-      <li class="list-group-item">Arômes de caramel, d'épices, de levure, de fruits et de miel.</li>
-      <li class="list-group-item">Saveurs d'herbes, d'épices, de levure, de fruits et de caramel.</li>
-      <li class="list-group-item">6°</li>
-      <li class="list-group-item">33cl</li>
-    </ul>
+<div class="card-group">
+{% for article in articles %}
+<div class="col-sm-4 mb-3">
+  <div class="card">
+    <img class="card-img-top" src={{ asset('img/sans-culotte325.png')}} alt="Card image cap">
     <div class="card-body">
-      <a href="#" class="card-link">Card link</a>
-      <a href="#" class="card-link">Another link</a>
+      <h5 class="card-title">{{article.title}}</h5>
+      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
     </div>
   </div>
+  </div><!-- FIN COL SM3 -->
+  {% endfor %}
 </div>
-
+</div><!-- FIN CONTAINER  -->
 
 
 

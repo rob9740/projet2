@@ -9,26 +9,23 @@
   <h1 class="text-center mt-4">ANGLETERRE</h1>
 </div>
 
-
 <div class="container">
-  <div class="card" style="width: 18rem;">
-    <img class="card-img-top" src="#" alt="Card image cap">
-      <div class="card-body">
-        <h5 class="card-title text-center">nom biere</h5>
-        <p class="card-text">Apparence</p>
-  </div>
-    <ul class="list-group list-group-flush">
-      <li class="list-group-item">Arômes</li>
-      <li class="list-group-item">gout</li>
-      <li class="list-group-item">Degre</li>
-      <li class="list-group-item">Contenance</li>
-    </ul>
+<div class="card-group">
+{% for article in articles %}
+<div class="col-sm-4 mb-3">
+  <div class="card">
+    <img class="card-img-top" src={{ asset('img/kwak.png') }} alt="Card image cap">
     <div class="card-body">
-      <a href="#" class="card-link">Card link</a>
-      <a href="#" class="card-link">Another link</a>
+      <h5 class="card-title">{{article.title}}</h5>
+      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
     </div>
   </div>
+  </div><!-- FIN COL SM3 -->
+  {% endfor %}
 </div>
+</div><!-- FIN CONTAINER  -->
+
 
     
 
