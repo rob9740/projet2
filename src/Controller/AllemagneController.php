@@ -14,9 +14,11 @@ class AllemagneController extends AbstractController
      */
     public function index(ArticleRepository $articleRepository): Response
     {
-        return $this->render('allemagne/index.html.twig', [
-            'controller_name' => 'AllemagneController',
+        return $this->render('country/index.html.twig', [
+            'titlePage' => 'AllemagneController',
+            'country' => 'Allemagne',
             'articles' => $articleRepository->findAll(),
+            //'articles' => $articleRepository->findBy( ['country' => 'allemagne']),
         ]);
     }
 }

@@ -19,6 +19,7 @@ class ArticleType extends AbstractType
             ->add('volume')
             ->add('degre')
             ->add('marque')
+            ->add('country')
         ;
     }
 

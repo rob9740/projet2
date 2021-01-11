@@ -14,9 +14,11 @@ class AngleterreController extends AbstractController
      */
     public function index(ArticleRepository $articleRepository): Response
     {
-        return $this->render('angleterre/index.html.twig', [
-            'controller_name' => 'AngleterreController',
+        return $this->render('country/index.html.twig', [
+            'titlePage' => 'AngleterreController',
+            'country' => 'Angleterre',
             'articles' => $articleRepository->findAll(),
+            //'articles' => $articleRepository->findBy( ['country' => 'angleterre']),
         ]);
     }
 }

@@ -14,8 +14,11 @@ class BelgiqueController extends AbstractController
      */
     public function index(ArticleRepository $articleRepository): Response
     {
-        return $this->render('belgique/index.html.twig', [
+        return $this->render('country/index.html.twig', [
+            'titlePage' => 'BelgiqueController',
+            'country' => 'Belgique',
             'articles' => $articleRepository->findAll(),
+            //'articles' => $articleRepository->findBy( ['country' => 'belgique']),
         ]);
     }
 }

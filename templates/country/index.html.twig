@@ -1,25 +1,24 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello AllemagneController!{% endblock %}
+{% block title %}{{titlePage}}{% endblock %}
 
 {% block body %}
 
-
-
 <div class="pays">
-  <h1 class="text-center mt-4">ALLEMAGNE</h1>
+    <h1 class="text-center mt-4">{{country}}</h1>
 </div>
-
 <div class="container">
 <div class="card-group">
 {% for article in articles %}
 <div class="col-sm-4 mb-3">
   <div class="card">
-    <img class="card-img-top" src={{ asset('img/paulaner-salvato-ALL.png') }} alt="Card image cap">
+    <img class="card-img-top" src={{ asset('img/' ~ article.imageFilename) }} alt="Card image cap">
     <div class="card-body">
       <h5 class="card-title">{{article.title}}</h5>
-      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+
+      <p class="card-text">{{article.description}}</p>
       <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      <p class="card-text"><span class="bold">{{article.price}}</span></p>
     </div>
   </div>
   </div><!-- FIN COL SM3 -->
@@ -27,14 +26,6 @@
 </div>
 </div><!-- FIN CONTAINER  -->
 
-
-
-
-
-
-
-
-
-
-
 {% endblock %}
+
+

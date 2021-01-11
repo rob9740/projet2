@@ -52,6 +52,11 @@ class Article
      */
     private $marque;
 
+    /**
+     * @ORM\Column(type="string", length=255, nullable=true)
+     */
+    private $country;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -137,6 +142,18 @@ class Article
     public function setMarque(string $marque): self
     {
         $this->marque = $marque;
+
+        return $this;
+    }
+
+    public function getCountry(): ?string
+    {
+        return $this->country;
+    }
+
+    public function setCountry(?string $country): self
+    {
+        $this->country = $country;
 
         return $this;
     }

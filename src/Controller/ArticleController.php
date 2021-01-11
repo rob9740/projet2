@@ -52,7 +52,7 @@ class ArticleController extends AbstractController
     }
 
     /**
-     * @Route("/{id}", name="article_show", methods={"GET"})
+     * @Route("/{id}", name="article_show", methods={"GET"}, requirements={"id"="\d+"})
      * @IsGranted("ROLE_ADMIN")
      */
     public function show(Article $article): Response
