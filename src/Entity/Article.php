@@ -121,6 +121,7 @@ class Article
 
         return $this;
     }
+    
 
     public function getDegre(): ?string
     {

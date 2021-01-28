@@ -17,7 +17,7 @@ class FranceController extends AbstractController
         return $this->render('country/index.html.twig', [
             'titlePage' => 'franceController',
             'country' => 'france',
-            'articles' => $articleRepository->findAll(),
+            'articles' => $articleRepository->findBy( ['country' => 'france']),
             //'articles' => $articleRepository->findBy( ['country' => 'france']),
         ]);
     }

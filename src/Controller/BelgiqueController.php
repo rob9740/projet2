@@ -17,7 +17,7 @@ class BelgiqueController extends AbstractController
         return $this->render('country/index.html.twig', [
             'titlePage' => 'BelgiqueController',
             'country' => 'Belgique',
-            'articles' => $articleRepository->findAll(),
+            'articles' => $articleRepository->findBy( ['country' => 'belgique'] ),
             //'articles' => $articleRepository->findBy( ['country' => 'belgique']),
         ]);
     }

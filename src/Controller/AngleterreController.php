@@ -17,7 +17,7 @@ class AngleterreController extends AbstractController
         return $this->render('country/index.html.twig', [
             'titlePage' => 'AngleterreController',
             'country' => 'Angleterre',
-            'articles' => $articleRepository->findAll(),
+            'articles' => $articleRepository->findBy( ['country' => 'angleterre']),
             //'articles' => $articleRepository->findBy( ['country' => 'angleterre']),
         ]);
     }
