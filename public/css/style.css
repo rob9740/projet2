@@ -34,8 +34,29 @@ font-size: 24px;}
       }
 
 .card-subtitle {color: green;}
+
+
+/*TEXTE */
+.card-title {text-align: center;
+             font-weight: bold;
+             text-transform: uppercase;
+             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
+
+h1 {font-size: 75px;
+     text-transform: uppercase;
+     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      padding-top: 100px;
+      padding-bottom: 100px;}
+
+
+/*BELGIQUE */
+
+
+
+
+
 /*FRANCE */
-.col-3 {text-align: center;}
+
 
 
 

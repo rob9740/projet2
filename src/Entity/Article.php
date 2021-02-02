@@ -57,6 +57,11 @@ class Article
      */
     private $country;
 
+    /**
+     * @ORM\Column(type="string", length=255)
+     */
+    private $gout;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -155,6 +160,18 @@ class Article
     public function setCountry(?string $country): self
     {
         $this->country = $country;
+
+        return $this;
+    }
+
+    public function getGout(): ?string
+    {
+        return $this->gout;
+    }
+
+    public function setGout(string $gout): self
+    {
+        $this->gout = $gout;
 
         return $this;
     }
