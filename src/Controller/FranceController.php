@@ -18,7 +18,7 @@ class FranceController extends AbstractController
             'titlePage' => 'franceController',
             'country' => 'france',
             'articles' => $articleRepository->findBy( ['country' => 'france']),
-            //'articles' => $articleRepository->findBy( ['country' => 'france']),
+            'hasSlider' => true
         ]);
     }
 }

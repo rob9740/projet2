@@ -18,7 +18,7 @@ class AngleterreController extends AbstractController
             'titlePage' => 'AngleterreController',
             'country' => 'Angleterre',
             'articles' => $articleRepository->findBy( ['country' => 'angleterre']),
-            //'articles' => $articleRepository->findBy( ['country' => 'angleterre']),
+            'hasSlider' => true
         ]);
     }
 }

@@ -15,9 +15,17 @@
     <img class="card-img-top" src={{ asset('img/' ~ article.imageFilename) }} alt="Card image cap">
     <div class="card-body">
       <h5 class="card-title">{{article.title}}</h5>
-
-      <p class="card-text">{{article.description}}</p>
-      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      <p class="card-text"><small class="text-danger">DESCRIPTION</small></p>
+      <p class="card-text"><span class="bold">{{article.description}}</span></p>
+      <p class="card-text"><small class="text-danger">VOLUME</small></p>
+      <p class="card-text"><span class="bold">{{article.volume}}</span></p>
+      <p class="card-text"><small class="text-danger">DEGRÉ</small></p>
+      <p class="card-text"><span class="bold">{{article.degre}}</span></p>
+      <p class="card-text"><small class="text-danger">GOÛT</small></p>
+      <p class="card-text"><span class="bold">{{article.gout}}</span></p>
+      <p class="card-text"><small class="text-danger bg-warning">BRASSERIE</small></p>
+      <p class="card-text"><span class="bold">{{article.marque}}</span></p>
+      <p class="card-text"><small class="text-danger">PRIX</small></p>
       <p class="card-text"><span class="bold">{{article.price}}</span></p>
     </div>
   </div>

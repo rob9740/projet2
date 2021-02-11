@@ -17,6 +17,7 @@ class ArticleType extends AbstractType
             ->add('description')
             ->add('imageFilename')
             ->add('volume')
+            ->add('gout')
             ->add('degre')
             ->add('marque')
             ->add('country')

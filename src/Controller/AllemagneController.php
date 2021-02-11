@@ -18,7 +18,8 @@ class AllemagneController extends AbstractController
             'titlePage' => 'AllemagneController',
             'country' => 'Allemagne',
             'articles' => $articleRepository->findBy( ['country' => 'allemagne']),
-            //'articles' => $articleRepository->findBy( ['country' => 'allemagne']),
+            'hasSlider' => true
+
         ]);
     }
 }

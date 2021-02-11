@@ -18,7 +18,7 @@ class BelgiqueController extends AbstractController
             'titlePage' => 'BelgiqueController',
             'country' => 'Belgique',
             'articles' => $articleRepository->findBy( ['country' => 'belgique'] ),
-            //'articles' => $articleRepository->findBy( ['country' => 'belgique']),
+            'hasSlider' => true
         ]);
     }
 }
