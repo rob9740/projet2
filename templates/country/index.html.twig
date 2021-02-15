@@ -18,21 +18,25 @@
       <p class="card-text"><small class="text-danger">DESCRIPTION</small></p>
       <p class="card-text"><span class="bold">{{article.description}}</span></p>
       <p class="card-text"><small class="text-danger">VOLUME</small></p>
-      <p class="card-text"><span class="bold">{{article.volume}}</span></p>
+      <p class="card-text"><span class="bold">{{article.volume}} cl</span></p>
       <p class="card-text"><small class="text-danger">DEGRÉ</small></p>
-      <p class="card-text"><span class="bold">{{article.degre}}</span></p>
+      <p class="card-text"><span class="bold">{{article.degre}} °</span></p>
       <p class="card-text"><small class="text-danger">GOÛT</small></p>
       <p class="card-text"><span class="bold">{{article.gout}}</span></p>
       <p class="card-text"><small class="text-danger bg-warning">BRASSERIE</small></p>
       <p class="card-text"><span class="bold">{{article.marque}}</span></p>
       <p class="card-text"><small class="text-danger">PRIX</small></p>
-      <p class="card-text"><span class="bold">{{article.price}}</span></p>
+      <p class="card-text"><span class="bold">{{article.price}} €</span></p>
     </div>
   </div>
   </div><!-- FIN COL SM3 -->
   {% endfor %}
 </div>
 </div><!-- FIN CONTAINER  -->
+
+{{ include("lieu/index.html.twig") }}
+
+
 
 {% endblock %}
 
