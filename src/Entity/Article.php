@@ -175,4 +175,11 @@ class Article
 
         return $this;
     }
+
+    public function setLien(string $lien): self
+    {
+        $this->lien = $lien;
+
+        return $this;
+    }
 }

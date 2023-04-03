@@ -10,7 +10,6 @@
             <tr>
                 <th>Id</th>
                 <th>Titre</th>
-                <th>Prix</th>
                 <th>Description</th>
                 <th>Images</th>
                 <th>Volume</th>
@@ -18,6 +17,7 @@
                 <th>Gout</th>
                 <th>country</th>
                 <th>Marque</th>
+                <th>Lien</th>
                 <th>actions</th>
             </tr>
         </thead>
@@ -26,7 +26,6 @@
             <tr>
                 <td>{{ article.id }}</td>
                 <td>{{ article.title }}</td>
-                <td>{{ article.price }}</td>
                 <td>{{ article.description }}</td>
                 <td>{{ article.imageFilename }}</td>
                 <td>{{ article.volume }}</td>
@@ -34,9 +33,11 @@
                 <td>{{ article.gout }}</td>
                 <td>{{ article.country }}</td>
                 <td>{{ article.marque }}</td>
+                
                 <td>
                     <a href="{{ path('article_show', {'id': article.id}) }}"><i class="fas fa-eye"></i></a>
                     <a href="{{ path('article_edit', {'id': article.id}) }}"><i class="fas fa-pen-fancy"></i>edit</a>
+                   
                 </td>
             </tr>
         {% else %}
